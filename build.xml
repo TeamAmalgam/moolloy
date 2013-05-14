@@ -1,0 +1,26 @@
+<project name="Moolloy" basedir=".">
+  <description>
+    ANT build file for Moolloy.
+  </description>
+
+  <target name="configure">
+    <exec executable="../waf"
+          dir="kodkod">
+      <arg value="configure" />
+    </exec>
+  </target>
+
+  <target name="alloy"
+          depends="kodkod">
+    <exec executable="./mkdist.sh"
+          dir="alloy" />
+  </target>
+
+  <target name="kodkod">
+    <exec executable="../waf"
+          dir="kodkod">
+      <arg value="build" />
+      <arg value="install" />
+    </exec>
+  </target>
+</project>
