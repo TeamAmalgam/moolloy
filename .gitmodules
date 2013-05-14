@@ -1,0 +1,6 @@
+[submodule "kodkod"]
+	path = kodkod
+	url = git@github.com:TeamAmalgam/kodkod.git
+[submodule "alloy"]
+	path = alloy
+	url = git@ecegit.uwaterloo.ca:drayside/alloy.git
