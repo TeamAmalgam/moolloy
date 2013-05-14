@@ -13,6 +13,21 @@ To get started:
 Remember that when updating Alloy or Kodkod, you will also need to update and
 push the parent repository.
 
+Building Moolloy
+----------------
+
+The overall build process for Moolloy uses ant.
+The first time you build moolloy you will need to execute:
+
+    ant configure
+
+This will perform first time configuration of waf in the kodkod project.
+
+For subsequent builds run:
+
+    ant alloy
+
+This will build the modified version of alloy.
 
 Building Kodkod
 ---------------
