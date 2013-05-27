@@ -1,0 +1,12 @@
+language: java
+
+install:
+  - "ant deps"
+
+script:
+  - "ant configure"
+  - "ant alloy"
+
+jdk:
+  - oraclejdk7
+  - openjdk7
