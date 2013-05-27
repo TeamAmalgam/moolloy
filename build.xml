@@ -29,4 +29,8 @@
       <arg value="all" />
     </exec>
   </target>
+
+  <target name="dist" depends="alloy">
+    <copy file="alloy/dist/alloy-dev.jar" todir="dist" />
+  </target>
 </project>
