@@ -19,6 +19,7 @@ Building Moolloy
 The overall build process for Moolloy uses ant.
 The first time you build moolloy you will need to execute:
 
+    ant deps
     ant configure
 
 This will perform first time configuration of waf in the kodkod project.
@@ -35,7 +36,7 @@ Building Kodkod
 Kodkod uses `waf`. The build binary (a Python script) is included in the
 repository. To run:
 
-    ./waf configure build
+    ./waf deps configure all
 
 ### Some issues with waf
 
