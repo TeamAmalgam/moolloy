@@ -3,8 +3,15 @@
     ANT build file for Moolloy.
   </description>
 
+  <target name="deps">
+    <exec executable="./waf"
+          dir="kodkod">
+      <arg value="deps" />
+    </exec>
+  </target>
+
   <target name="configure">
-    <exec executable="../waf"
+    <exec executable="./waf"
           dir="kodkod">
       <arg value="configure" />
     </exec>
@@ -17,10 +24,9 @@
   </target>
 
   <target name="kodkod">
-    <exec executable="../waf"
+    <exec executable="./waf"
           dir="kodkod">
-      <arg value="build" />
-      <arg value="install" />
+      <arg value="all" />
     </exec>
   </target>
 </project>
