@@ -5,14 +5,16 @@
 
   <target name="deps">
     <exec executable="./waf"
-          dir="kodkod">
+          dir="kodkod"
+          failonerror="true">
       <arg value="deps" />
     </exec>
   </target>
 
   <target name="configure">
     <exec executable="./waf"
-          dir="kodkod">
+          dir="kodkod"
+          failonerror="true">
       <arg value="configure" />
     </exec>
   </target>
@@ -20,12 +22,14 @@
   <target name="alloy"
           depends="kodkod">
     <exec executable="./mkdist.sh"
-          dir="alloy" />
+          dir="alloy"
+          failonerror="true"/>
   </target>
 
   <target name="kodkod">
     <exec executable="./waf"
-          dir="kodkod">
+          dir="kodkod"
+          failonerror="true">
       <arg value="all" />
     </exec>
   </target>
