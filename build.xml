@@ -29,7 +29,6 @@
           dir="kodkod"
           failonerror="true">
       <arg value="all" />
-      <arg value="--no-solvers" />
     </exec>
   </target>
 
