@@ -20,10 +20,8 @@
   </target>
 
   <target name="alloy"
-          depends="kodkod">
-    <exec executable="./mkdist.sh"
-          dir="alloy"
-          failonerror="true"/>
+    depends="kodkod">
+    <ant dir="alloy" target="all" />
   </target>
 
   <target name="kodkod">
@@ -31,7 +29,6 @@
           dir="kodkod"
           failonerror="true">
       <arg value="all" />
-      <arg value="--no-solvers" />
     </exec>
   </target>
 
