@@ -1,6 +1,16 @@
 Moolloy
 =======
+Moolloy is a tool for solving multi-objective optimization problems.
 
+Problems are specified in a modified Alloy syntax which allows the specification of problem constraints and objectives.
+Moolloy outputs the pareto-optimal solutions to the optimization problem as Alloy XML solution files.
+
+Example inputs can be found in our [test-models repo](https://github.com/TeamAmalgam/test-models).
+
+
+**NOTE: This is not the Spreadsheet Interface Moolloy referred to in [(Rayside, 2009)](http://dl.acm.org/citation.cfm?id=1723037&dl=ACM&coll=DL&CFID=358870312&CFTOKEN=49390611)**
+Project Layout
+--------------
 This is the parent repository for Alloy and Kodkod. We are using git submodules
 to manage the child repositories.
 
