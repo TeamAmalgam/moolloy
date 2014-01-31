@@ -4,3 +4,6 @@
 [submodule "alloy"]
 	path = alloy
 	url = git@ecegit.uwaterloo.ca:drayside/alloy.git
+[submodule "test-models"]
+	path = test-models
+	url = git@github.com:TeamAmalgam/test-models.git
