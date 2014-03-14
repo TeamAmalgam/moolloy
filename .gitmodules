@@ -3,7 +3,7 @@
 	url = git@github.com:TeamAmalgam/kodkod.git
 [submodule "alloy"]
 	path = alloy
-	url = git@ecegit.uwaterloo.ca:drayside/alloy.git
+	url = gitlab@git.uwaterloo.ca:teamamalgam/alloy.git
 [submodule "test-models"]
 	path = test-models
 	url = git@github.com:TeamAmalgam/test-models.git
